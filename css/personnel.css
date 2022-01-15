@@ -1,0 +1,123 @@
+.person,
+.person_container,
+.persons_container,
+.person_action{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.persons_container{
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+}
+.person_container{
+    margin-top: 1rem;
+    width: 75%;
+}
+.person{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 13px 1rem;
+    text-decoration: none;
+    color: #555555;
+    box-shadow: 0px 5px 10px 0px #797979;
+    transition: all .5s ease;
+}
+.person:hover{
+    background-color: #f2d5ff;
+}
+.person span{
+    padding-left: 2rem;
+}
+.profile_image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tipple_dots_icon{
+    width: 2rem;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #505050;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.tipple_dots_icon:hover{
+    opacity: .7;
+}
+.person_action{
+    display: flex;
+}
+.update_btn,
+.delete_btn{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #505050;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+.update_btn:hover,
+.delete_btn:hover{
+    opacity: .7;
+}
+.update_btn:hover{
+    background-color: #eb8006;
+}
+.delete_btn:hover{
+    background-color: #da1313;
+}
+.update_btn{
+    text-decoration: none;
+}
+.update_btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.confirm_delete_btn{
+    padding: 15px 25px;
+    background-color: #da1313;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.confirm_delete_btn:hover{
+    opacity: .7;
+}
+
+/* DELETE MODAL*/
+.modal_container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+}
+.modal{
+    background-color: #FFF;
+    width: 25rem;
+    height: 8rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
